@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>صفحة هبوط</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="first">
+          <img src="./img/health.png" width="65%" alt="" />
+        </div>
+        <div class="middel">
+          <img src="./img/sociaty.jpg" class="fixedWidth" alt="" />
+          <img src="./img/athar.png" alt="" />
+          <img src="./img/rescourses.png" alt="" />
+          <img src="./img/health.png" alt="" />
+        </div>
+        <div class="last">
+          <img src="./img/athar.png" width="65%" alt="" />
+        </div>
+      </div>
+
+      <div class="title flex">
+          <p class="lang"> بيانات المسجلين (الحاصلين على الهدية المقدمة من هجيز) كدعم لمبادرة اعرف ارقامك ضمن حملة مجتمع حريص</p>
+          <img src="./img/huggies.png" width="10%" alt="">
+      </div>
+      <div class="form">
+          <form method="post" id="myForm" onsubmit="submitForm()">
+        <div class="row">
+            <input required name="fullName" class="input" type="text">
+            <label class="label" for="">الاسم الثلاثي  </label>
+        </div>
+        <div class="row">
+            <input required name="dateOfBirth" class="input" type="text">
+            <label class="label" for=""> تاريخ الميلاد</label>
+        </div>
+        <div class="row">
+            <input required name="nationality" class="input" type="text">
+            <label class="label" for="">الجنسية</label>
+        </div>
+        <div class="row">
+            <input required name="phone" class="input" type="number">
+            <label class="label" for="">رقم التواصل </label>
+        </div>
+        <div class="row">
+            <input required name="height" class="input" type="text">
+            <label class="label" for="">الطول</label>
+        </div>
+        <div class="row">
+            <input required name="weight" class="input" type="text">
+            <label class="label" for="">الوزن</label>
+        </div>
+        <div class="row">
+            <input required name="waistline" class="input" type="text">
+            <label class="label" for="">محيط الخصر</label>
+        </div>
+        <div class="row">
+            <input required name="pressureGauge" class="input" type="text">
+            <label class="label" for="">قياس الضغط</label>
+        </div>
+        <div class="row">
+            <input required name="socialStatus" class="input" type="text">
+            <label class="label" for="">الحالة الاجتماعية </label>
+        </div>
+        <div class="row">
+            <input required name="children" class="input" type="number">
+            <label class="label" for=""> عدد الاطفال</label>
+        </div>
+        <div class="row">
+            <input required name="youngestChild" class="input" type="number">
+            <label class="label" for="">عمر اصغر طفل </label>
+        </div>
+        <div class="row">
+            <input required  name="monthOfPregnancy" class="input" type="text">
+            <label class="label" for="">في حالة الحمل (عدد اشهر الحمل الان)</label>
+        </div>
+        <button class="btn" type="submit">ادخل البيانات </button>
+    </form>
+      </div>
+      
+      <div class="footer">
+        <div class="middel">
+            <img src="./img/sociaty.jpg" class="fixedWidth" alt="" />
+            <img src="./img/athar.png" alt="" />
+            <img src="./img/rescourses.png" alt="" />
+            <img src="./img/health.png" alt="" />
+          </div>
+      </div>
+    </div>
+    <script>
+      function submitForm() {
+        alert("تم ادخال البيانات")
+      }
+      </script>
+  </body>
+</html>
